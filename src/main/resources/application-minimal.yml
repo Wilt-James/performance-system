@@ -1,0 +1,48 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: hospital-performance-system
+  
+  # 数据源配置
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/hospital_performance?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+    druid:
+      initial-size: 1
+      min-idle: 1
+      max-active: 5
+
+  # 禁用所有可能冲突的自动配置
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration
+      - org.springframework.boot.autoconfigure.data.redis.RedisRepositoriesAutoConfiguration
+      - org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
+      - org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration
+
+# MyBatis Plus最小配置
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+  global-config:
+    db-config:
+      id-type: ASSIGN_ID
+
+# 日志配置
+logging:
+  level:
+    root: WARN
+    com.hospital.performance: INFO
+    org.springframework: WARN
+    org.mybatis: WARN
+
+# JWT配置
+jwt:
+  secret: hospital-performance-system-secret-key-2024
+  expiration: 86400000

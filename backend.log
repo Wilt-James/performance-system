@@ -1,0 +1,103 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< com.hospital:performance-system >-------------------
+[INFO] Building Hospital Performance Management System 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:3.2.0:run (default-cli) > test-compile @ performance-system >>>
+[WARNING] The artifact mysql:mysql-connector-java:jar:8.0.33 has been relocated to com.mysql:mysql-connector-j:jar:8.0.33: MySQL Connector/J artifacts moved to reverse-DNS compliant Maven 2+ coordinates.
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ performance-system ---
+[WARNING] The POM for commons-io:commons-io:jar:2.11.0 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+[WARNING] The POM for org.apache.commons:commons-lang3:jar:3.12.0 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ performance-system ---
+[WARNING] The POM for org.apache.maven.shared:maven-shared-utils:jar:3.3.4 is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 54 source files with javac [debug release 17] to target\classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /H:/Java/test/src/main/java/com/hospital/performance/util/ExcelExportUtil.java:[6,37] 程序包org.apache.poi.xssf.usermodel不存在
+[ERROR] /H:/Java/test/src/main/java/com/hospital/performance/util/ExcelExportUtil.java:[201,40] 找不到符号
+  符号:   类 Workbook
+  位置: 类 com.hospital.performance.util.ExcelExportUtil
+[ERROR] /H:/Java/test/src/main/java/com/hospital/performance/util/ExcelExportUtil.java:[201,13] 找不到符号
+  符号:   类 CellStyle
+  位置: 类 com.hospital.performance.util.ExcelExportUtil
+[ERROR] /H:/Java/test/src/main/java/com/hospital/performance/util/ExcelExportUtil.java:[216,41] 找不到符号
+  符号:   类 Workbook
+  位置: 类 com.hospital.performance.util.ExcelExportUtil
+[ERROR] /H:/Java/test/src/main/java/com/hospital/performance/util/ExcelExportUtil.java:[216,13] 找不到符号
+  符号:   类 CellStyle
+  位置: 类 com.hospital.performance.util.ExcelExportUtil
+[ERROR] /H:/Java/test/src/main/java/com/hospital/performance/util/ExcelExportUtil.java:[241,39] 找不到符号
+  符号:   类 Workbook
+  位置: 类 com.hospital.performance.util.ExcelExportUtil
+[ERROR] /H:/Java/test/src/main/java/com/hospital/performance/util/ExcelExportUtil.java:[241,13] 找不到符号
+  符号:   类 CellStyle
+  位置: 类 com.hospital.performance.util.ExcelExportUtil
+[ERROR] /H:/Java/test/src/main/java/com/hospital/performance/util/ExcelExportUtil.java:[257,41] 找不到符号
+  符号:   类 Workbook
+  位置: 类 com.hospital.performance.util.ExcelExportUtil
+[ERROR] /H:/Java/test/src/main/java/com/hospital/performance/util/ExcelExportUtil.java:[257,13] 找不到符号
+  符号:   类 CellStyle
+  位置: 类 com.hospital.performance.util.ExcelExportUtil
+[ERROR] /H:/Java/test/src/main/java/com/hospital/performance/util/ExcelExportUtil.java:[277,38] 找不到符号
+  符号:   类 Cell
+  位置: 类 com.hospital.performance.util.ExcelExportUtil
+[ERROR] /H:/Java/test/src/main/java/com/hospital/performance/util/ExcelExportUtil.java:[277,67] 找不到符号
+  符号:   类 CellStyle
+  位置: 类 com.hospital.performance.util.ExcelExportUtil
+[ERROR] /H:/Java/test/src/main/java/com/hospital/performance/util/ExcelExportUtil.java:[5,1] 程序包org.apache.poi.ss.usermodel不存在
+[INFO] 12 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  16.386 s
+[INFO] Finished at: 2025-08-04T00:26:06+08:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile (default-compile) on project performance-system: Compilation failure: Compilation failure: 
+[ERROR] /H:/Java/test/src/main/java/com/hospital/performance/util/ExcelExportUtil.java:[6,37] 程序包org.apache.poi.xssf.usermodel不存在
+[ERROR] /H:/Java/test/src/main/java/com/hospital/performance/util/ExcelExportUtil.java:[201,40] 找不到符号
+[ERROR]   符号:   类 Workbook
+[ERROR]   位置: 类 com.hospital.performance.util.ExcelExportUtil
+[ERROR] /H:/Java/test/src/main/java/com/hospital/performance/util/ExcelExportUtil.java:[201,13] 找不到符号
+[ERROR]   符号:   类 CellStyle
+[ERROR]   位置: 类 com.hospital.performance.util.ExcelExportUtil
+[ERROR] /H:/Java/test/src/main/java/com/hospital/performance/util/ExcelExportUtil.java:[216,41] 找不到符号
+[ERROR]   符号:   类 Workbook
+[ERROR]   位置: 类 com.hospital.performance.util.ExcelExportUtil
+[ERROR] /H:/Java/test/src/main/java/com/hospital/performance/util/ExcelExportUtil.java:[216,13] 找不到符号
+[ERROR]   符号:   类 CellStyle
+[ERROR]   位置: 类 com.hospital.performance.util.ExcelExportUtil
+[ERROR] /H:/Java/test/src/main/java/com/hospital/performance/util/ExcelExportUtil.java:[241,39] 找不到符号
+[ERROR]   符号:   类 Workbook
+[ERROR]   位置: 类 com.hospital.performance.util.ExcelExportUtil
+[ERROR] /H:/Java/test/src/main/java/com/hospital/performance/util/ExcelExportUtil.java:[241,13] 找不到符号
+[ERROR]   符号:   类 CellStyle
+[ERROR]   位置: 类 com.hospital.performance.util.ExcelExportUtil
+[ERROR] /H:/Java/test/src/main/java/com/hospital/performance/util/ExcelExportUtil.java:[257,41] 找不到符号
+[ERROR]   符号:   类 Workbook
+[ERROR]   位置: 类 com.hospital.performance.util.ExcelExportUtil
+[ERROR] /H:/Java/test/src/main/java/com/hospital/performance/util/ExcelExportUtil.java:[257,13] 找不到符号
+[ERROR]   符号:   类 CellStyle
+[ERROR]   位置: 类 com.hospital.performance.util.ExcelExportUtil
+[ERROR] /H:/Java/test/src/main/java/com/hospital/performance/util/ExcelExportUtil.java:[277,38] 找不到符号
+[ERROR]   符号:   类 Cell
+[ERROR]   位置: 类 com.hospital.performance.util.ExcelExportUtil
+[ERROR] /H:/Java/test/src/main/java/com/hospital/performance/util/ExcelExportUtil.java:[277,67] 找不到符号
+[ERROR]   符号:   类 CellStyle
+[ERROR]   位置: 类 com.hospital.performance.util.ExcelExportUtil
+[ERROR] /H:/Java/test/src/main/java/com/hospital/performance/util/ExcelExportUtil.java:[5,1] 程序包org.apache.poi.ss.usermodel不存在
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

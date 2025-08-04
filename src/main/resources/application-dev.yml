@@ -1,0 +1,64 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: hospital-performance-system
+  
+  # 数据源配置
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/hospital_performance?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    username: root
+    password: root
+    druid:
+      # 基本连接配置
+      initial-size: 5
+      min-idle: 5
+      max-active: 10
+      max-wait: 60000
+      # 验证配置
+      validation-query: SELECT 1
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+
+  # 禁用Redis（如果Redis未启动）
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration
+      - org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
+
+# MyBatis Plus配置
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: ASSIGN_ID
+      logic-delete-field: deleted
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+  # mapper-locations: classpath*:mapper/**/*Mapper.xml
+
+# 日志配置
+logging:
+  level:
+    com.hospital.performance: info
+    org.springframework.security: warn
+  pattern:
+    console: '%d{yyyy-MM-dd HH:mm:ss} - %msg%n'
+
+# JWT配置
+jwt:
+  secret: hospital-performance-system-secret-key-2024
+  expiration: 86400000
+
+# 系统配置
+system:
+  name: 院内绩效考核系统
+  version: 1.0.0
+  author: Hospital IT Team
